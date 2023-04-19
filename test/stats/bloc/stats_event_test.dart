@@ -1,0 +1,17 @@
+// ignore_for_file: prefer_const_constructors
+
+import 'package:flutter_test/flutter_test.dart';
+import 'package:todo_app/presentations/stats/stats.dart';
+
+void main() {
+  group('StatsEvent', () {
+    group('StatsSubscriptionRequested', () {
+      test('supports value equality', () {
+        expect(
+          StatsSubscriptionRequested(),
+          equals(StatsSubscriptionRequested()),
+        );
+      });
+    });
+  });
+}
